@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { protect } = require('../middleware/auth');
+const { protect, adminOnly } = require('../middleware/auth');
 const {
   getSubjects,
   getQuestions,
@@ -10,8 +10,8 @@ const {
   getProgress
 } = require('../controllers/quizController');
 
-// Public route (no auth required)
-router.get('/leaderboard', getLeaderboard);
+// Admin-only leaderboard
+router.get('/leaderboard', protect, adminOnly, getLeaderboard);
 
 // Protected routes
 router.use(protect);

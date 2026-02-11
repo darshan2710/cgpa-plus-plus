@@ -42,9 +42,8 @@ const Navbar = () => {
                   </>
                 ) : (
                   <>
-                    <Link to="/dashboard" className="text-gray-300 hover:text-white transition-colors text-sm">Quiz</Link>
+                    <Link to="/dashboard" className="text-gray-300 hover:text-white transition-colors text-sm">Home</Link>
                     <Link to="/result" className="text-gray-300 hover:text-white transition-colors text-sm">Results</Link>
-                    <Link to="/leaderboard" className="text-gray-300 hover:text-white transition-colors text-sm">Leaderboard</Link>
                     <Link to="/certificate" className="text-gray-300 hover:text-white transition-colors text-sm">Certificate</Link>
                   </>
                 )}
@@ -57,7 +56,6 @@ const Navbar = () => {
               </>
             ) : (
               <>
-                <Link to="/leaderboard" className="text-gray-300 hover:text-white transition-colors text-sm">Leaderboard</Link>
                 <Link to="/login" className="btn-secondary !px-5 !py-2 text-sm">Login</Link>
                 <Link to="/register" className="btn-primary !px-5 !py-2 text-sm">Register</Link>
               </>
@@ -91,9 +89,8 @@ const Navbar = () => {
                     </>
                   ) : (
                     <>
-                      <Link to="/dashboard" className="text-gray-300 hover:text-white py-2 text-sm" onClick={() => setMobileOpen(false)}>Quiz</Link>
+                      <Link to="/dashboard" className="text-gray-300 hover:text-white py-2 text-sm" onClick={() => setMobileOpen(false)}>Home</Link>
                       <Link to="/result" className="text-gray-300 hover:text-white py-2 text-sm" onClick={() => setMobileOpen(false)}>Results</Link>
-                      <Link to="/leaderboard" className="text-gray-300 hover:text-white py-2 text-sm" onClick={() => setMobileOpen(false)}>Leaderboard</Link>
                       <Link to="/certificate" className="text-gray-300 hover:text-white py-2 text-sm" onClick={() => setMobileOpen(false)}>Certificate</Link>
                     </>
                   )}
@@ -101,7 +98,6 @@ const Navbar = () => {
                 </>
               ) : (
                 <>
-                  <Link to="/leaderboard" className="text-gray-300 hover:text-white py-2 text-sm" onClick={() => setMobileOpen(false)}>Leaderboard</Link>
                   <Link to="/login" className="text-gray-300 hover:text-white py-2 text-sm" onClick={() => setMobileOpen(false)}>Login</Link>
                   <Link to="/register" className="text-gray-300 hover:text-white py-2 text-sm" onClick={() => setMobileOpen(false)}>Register</Link>
                 </>
