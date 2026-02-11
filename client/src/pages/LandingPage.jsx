@@ -14,7 +14,7 @@ const LandingPage = () => {
 
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto animate-fade-in">
           <div className="inline-block mb-6 px-4 py-1.5 bg-dark-600 border border-dark-400 rounded-full text-xs text-gray-400 tracking-widest uppercase">
-            Inter-College Event 2024
+            Inter-College Event 2026
           </div>
           
           <h1 className="font-heading text-6xl sm:text-7xl md:text-8xl font-black mb-6 tracking-tight">
@@ -175,7 +175,7 @@ const LandingPage = () => {
           <p className="text-gray-500 text-sm mb-6">IIIT Surat</p>
           <div className="neon-line w-16 mx-auto mb-6" />
           <p className="text-gray-600 text-xs">
-            © 2024 LCS — IIIT Surat. CGPA++ is an academic evaluation platform.
+            © 2026 LCS — IIIT Surat. CGPA++ is an academic evaluation platform.
           </p>
         </div>
       </footer>
