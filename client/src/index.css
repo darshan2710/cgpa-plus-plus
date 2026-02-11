@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-black text-white font-sans antialiased;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #111;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #FF5F1F, #FF1F3D);
+    border-radius: 3px;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply relative px-8 py-3 font-semibold text-white rounded-lg overflow-hidden transition-all duration-300;
+    background: linear-gradient(135deg, #FF5F1F, #FF1F3D);
+  }
+  .btn-primary:hover {
+    box-shadow: 0 0 30px rgba(255, 95, 31, 0.5), 0 0 60px rgba(255, 31, 61, 0.3);
+    transform: translateY(-2px);
+  }
+  .btn-primary:active {
+    transform: translateY(0);
+  }
+
+  .btn-secondary {
+    @apply px-8 py-3 font-semibold text-white rounded-lg border border-primary/50 bg-transparent transition-all duration-300;
+  }
+  .btn-secondary:hover {
+    @apply bg-primary/10 border-primary;
+    box-shadow: 0 0 20px rgba(255, 95, 31, 0.2);
+  }
+
+  .card {
+    @apply bg-dark-700 border border-dark-400 rounded-xl p-6 transition-all duration-300;
+  }
+  .card:hover {
+    @apply border-primary/30;
+    box-shadow: 0 0 20px rgba(255, 95, 31, 0.1);
+  }
+
+  .input-field {
+    @apply w-full px-4 py-3 bg-dark-600 border border-dark-400 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-primary transition-all duration-300;
+  }
+  .input-field:focus {
+    box-shadow: 0 0 15px rgba(255, 95, 31, 0.15);
+  }
+
+  .glow-border {
+    @apply border border-primary/50;
+    box-shadow: 0 0 15px rgba(255, 95, 31, 0.2), inset 0 0 15px rgba(255, 95, 31, 0.05);
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, #FF5F1F, #FF1F3D);
+  }
+
+  .glass {
+    @apply bg-dark-700/80 backdrop-blur-xl border border-white/5;
+  }
+
+  .neon-line {
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #FF5F1F, #FF1F3D, transparent);
+  }
+}
